@@ -1,0 +1,263 @@
+{
+  "global": {
+    "phrases": {
+      "ok": "OK",
+      "yes": "Yes",
+      "no": "No",
+      "delete": "Delete",
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "loading": "Loading",
+      "search": "Search",
+      "select": "Select",
+      "apply": "Apply",
+      "deselect": "Deselect",
+      "select_all": "Select All",
+      "deselect_all": "Deselect All",
+      "back": "Back",
+      "next": "Next",
+      "previous": "Previous",
+      "close": "Close"
+    },
+    "game_sort_column": {
+      "name": "Name",
+      "mod_downloads": "Mod Downloads",
+      "popularity": "Popularity"
+    },
+    "mod_sort_column": {
+      "relevance": "Relevance",
+      "downloads": "Downloads",
+      "name": "Name",
+      "owner": "Owner",
+      "size": "Size"
+    },
+    "sort_title": "Sort",
+    "sort_order": {
+      "ascending": "Ascending",
+      "descending": "Descending"
+    },
+    "sort_type": {
+      "alphabetical": "Alphabetical",
+      "creation_date": "Creation Date"
+    },
+    "select_dropdown": {
+      "default_fallback": "Select...",
+      "sort_by": "Sort By"
+    }
+  },
+
+  "splashscreen": {
+    "launching_msg": "Launching..."
+  },
+
+  "titlebar": {
+    "minimize_btn": "Minimize",
+    "maximize_btn": "Maximize",
+    "restore_btn": "Restore"
+  },
+
+  "task_manager": {
+    "title": "Tasks",
+    "active_tab_name": "Active",
+    "completed_tab_name": "Completed",
+
+    "source_label": "Source",
+    "no_tasks_yet_msg": "No tasks yet."
+  },
+
+  "status_bar": {
+    "downloads_tracker": "{{ count }} downloads",
+    "other_tasks_tracker": "{{ count }} other tasks"
+  },
+
+  "404_page": {
+    "subtitle": "There is nothing on this page. You somehow got here...",
+    "home_btn": "Go back home"
+  },
+
+  "game_select": {
+    "title": "Game Selection",
+    "subtitle": "Select the game you are managing mods for",
+    "search": {
+      "input_placeholder": "Search for a game",
+      "display_type_btn": "Change to {{ type }} layout",
+      "card_display_type": "card",
+      "list_display_type": "list"
+    },
+
+    "no_games_msg": "No games matched the search",
+
+    "bg_img_alt": "Background image of {{ gameName }}",
+    "select_btn": "Select",
+    "set_default_btn": "Set Default",
+    "fav_btn": "Favorite this game"
+  },
+
+  "profile": {
+    "blank": {
+      "no_profiles_title": "No profiles found",
+      "no_profiles_subtitle": "Create a profile to get started",
+      "create_profile_btn": "Create Profile"
+    },
+
+    "import_model": {
+      "import_title": "Import Modlist",
+      "preview_title": "Preview Mods",
+      "thunderstore_code_label": "Thunderstore Code"
+    },
+
+    "sidebar": {
+      "kill_game_btn": "Kill game",
+      "cancel_launch_btn": "Cancel",
+      "launch_modded_btn": "Launch profile",
+      "launch_vanilla_btn": "Start vanilla",
+      "game_settings_btn": "Game Settings",
+
+      "profiles_title": "Profiles",
+      "create_profile_tooltip": "Create new profile",
+      "import_profile_tooltip": "Import profile",
+
+      "no_profiles_search_msg": "No profiles found.",
+
+      "profile_running_icon": "Profile is running",
+      "ellipsis_btn": "More",
+      "pin_profile_btn": "Pin",
+      "unpin_profile_btn": "Unpin",
+      "rename_profile_btn": "Rename",
+      "duplicate_profile_btn": "Duplicate",
+      "copy_id_profile_btn": "Copy UUID",
+      "open_folder_profile_btn": "Open Folder",
+      "share_profile_btn": "Share"
+    },
+
+    "delete_msg": "Are you sure you want to delete the profile {{ profileName }}? This action cannot be undone.",
+
+    "tabs": {
+      "installed": "Installed Mods",
+      "online": "Online Mods",
+      "config": "Config"
+    },
+
+    "default_profile_name": "New profile",
+
+    "mod_markdown": {
+      "no_readme_provided": "No README provided.",
+      "no_changelog_provided": "No changelog provided."
+    }
+  },
+
+  "modlist": {
+    "fetching_msg": "Fetching mods...",
+    "discovered_msg": "Discovered {{ count }} mods",
+
+    "installed": {
+      "no_mods_title": "No mods installed",
+      "no_mods_msg": "No mods are installed for the current profile yet.",
+      "browse_btn": "Browse Mods",
+      "check_updates_btn": "Check for Updates",
+      "updates_available_btn": "Updates Available",
+
+      "multiselect_title": "Bulk Actions",
+      "selected_count_single": "{{ count }} mod selected",
+      "selected_count_plural": "{{ count }} mods selected",
+      "enable_selected": "Enable",
+      "disable_selected": "Disable",
+      "update_selected": "Update",
+
+      "updater_title": "Select mods to update",
+      "update_selected_btn": "Update Selected",
+      "update_all_btn": "Update All",
+      "change_version_btn": "Change Version",
+      "select_version_label": "Select Version",
+      "search_version_placeholder": "Search version",
+      "uninstall_btn": "Uninstall"
+    },
+    "online": {
+      "no_mods": "No mods found.",
+      "install_btn": "Install"
+    },
+
+    "modview": {
+      "no_mod_selected_title": "No mod selected",
+      "no_mod_selected_subtitle": "Select a mod to view it here.",
+
+      "dependencies_title": "Dependencies",
+      "versions_label": "Versions",
+      "changelog_title": "Changelog",
+      "donate_btn": "Donate",
+      "no_dependencies_msg": "This mod has no dependencies."
+    },
+
+    "search": {
+      "input_placeholder": "Search for a mod"
+    }
+  },
+
+  "doctor": {
+    "launch_options": {
+      "message": "To unlock the full functionality of Manderrow, one small tweak must be made to your Steam configuration.",
+      "message_overwrite": "It seems you've set some Launch Options for this game in Steam. To unlock the full functionality of Manderrow, those Launch Options will need to be changed.",
+
+      "fixes": {
+        "apply": {
+          "label": "Do it for me",
+          "confirm_label": "Apply Changes",
+          "description": "We'll go ahead and apply the changes for you. If you have it open, Steam will be closed as part of this process."
+        },
+        "retry": {
+          "label": "Do it myself",
+          "confirm_label": "I did it",
+          "description": "You'll need to paste the following string in the Launch Options field for the game in Steam: {{ launch_options }}"
+        },
+        "ignore": {
+          "label": "Trust me, I know what I'm doing",
+          "confirm_label": "Ignore",
+          "description": "Whatever you say, pal. You're on your own!"
+        },
+        "abort": {
+          "label": "I don't want to",
+          "confirm_label": "Abort",
+          "description": "No worries. Unfortunately, you'll be unable to launch with Manderrow at this time."
+        }
+      }
+    }
+  },
+
+  "settings": {
+    "title": "Settings",
+    "link_title": "App Settings",
+    "search_input_placeholder": "Search settings...",
+
+    "section": {
+      "general": "General",
+      "launching": "Launching"
+    },
+    "settings": {
+      "defaultGame": "Default game",
+      "openConsoleOnLaunch": "Open console on launch?"
+    }
+  },
+
+  "console": {
+    "search_input_placeholder": "Search log...",
+    "launching_log_placeholder": "Launching game, please wait...",
+    "log_created_at": "Created at",
+    "game_not_running": "Game not running.",
+    "live_log": "Live log",
+    "live_log_connected": "Connected",
+    "live_log_disconnected": "Disconnected"
+  },
+
+  "error": {
+    "title": "Oops! An error occurred...",
+    "deescalation_msg": "But don't worry, we caught it for you. We're still in beta, so bugs that can cause errors are expected. Details are below:",
+    "report_msg": "If you would like to help us fix this, please report the error to us below. Your help is greatly appreciated!",
+    "ignore_msg": "Otherwise, you can try to ignore this error and continue using Manderrow for now. Depending on the severity though, this may not be possible.",
+
+    "native_stack_trace": "Native Stack Trace",
+    "js_stack_trace": "JavaScript Stack Trace",
+
+    "report_btn": "Report",
+    "ignore_btn": "Ignore"
+  }
+}
