@@ -1,5 +1,5 @@
 import { faHardDrive } from "@fortawesome/free-regular-svg-icons";
-import { faDownload, faRefresh } from "@fortawesome/free-solid-svg-icons";
+import { faRefresh } from "@fortawesome/free-solid-svg-icons";
 import { Fa } from "solid-fa";
 import {
   type Accessor,
@@ -19,14 +19,8 @@ import {
   useContext,
 } from "solid-js";
 
-import { type Mod, type ModListing, type ModPackage } from "../types";
-import {
-  createMultiselectableList,
-  dateFormatterMed,
-  humanizeFileSize,
-  numberFormatter,
-  roundedNumberFormatter,
-} from "../utils";
+import { type ModPackage } from "../types";
+import { createMultiselectableList, humanizeFileSize, numberFormatter } from "../utils";
 
 import styles from "./ModList.module.css";
 import { t } from "../i18n/i18n";
@@ -280,29 +274,6 @@ function getIconUrl(qualifiedModName: string) {
 function getQualifiedModName(owner: string, name: string, version: string) {
   return `${owner}-${name}-${version}`;
 }
-function getModVersionUrl(gameId: string, owner: string, name: string, version: string) {
-  return getModAuthorUrl(gameId, owner) + `${name}/versions#:~:text=${version}`;
-}
-function getModUrl(gameId: string, owner: string, name: string) {
-  return getModAuthorUrl(gameId, owner) + `${name}/`;
-}
-function getModAuthorUrl(gameId: string, owner: string) {
-  return `https://thunderstore.io/c/${gameId}/p/${owner}/`;
-}
-
-function useInstalled(
-  installContext: typeof ModInstallContext.defaultValue,
-  modAccessor: Accessor<Mod>
-): Accessor<ModPackage | undefined> {
-  return createMemo(() => {
-    const mod = modAccessor();
-    if ("version" in mod) {
-      return mod;
-    } else {
-      return installContext?.installed.latest.find((pkg) => pkg.owner === mod.owner && pkg.name === mod.name);
-    }
-  });
-}
 
 function ModListItem(
   props: {
@@ -347,7 +318,7 @@ function ModListItem(
           <div class={styles.mod__selector} data-always-show={props.forceSelectorVisibility ? "" : undefined}>
             <Checkbox
               checked={props.isSelected!({ owner: props.mod.owner, name: props.mod.name })}
-              onChange={(checked) => props.select!()}
+              onChange={() => props.select!()}
               labelClass={styles.mod__selectorClickRegion}
               iconContainerClass={styles.mod__selectorIndicator}
             />
